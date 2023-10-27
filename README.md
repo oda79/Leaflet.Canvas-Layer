@@ -1,5 +1,7 @@
-# Leaflet.Canvas-Markers
-The continuation of [Leaflet.Canvas-Markers](http://eJuke.github.io/Leaflet.Canvas-Markers/examples/index.html)leaflet for displaying markers on canvas instead of DOM. Working with Leaflet 1.0.0 and above.
+# Leaflet.Canvas-Layer
+
+## What
+The continuation of [Leaflet.Canvas-Markers](http://eJuke.github.io/Leaflet.Canvas-Markers/examples/index.html) leaflet for displaying markers on canvas instead of DOM. Working with Leaflet 1.0.0 and above.
 Feel free to contribute
 
 ## New Features
@@ -37,17 +39,17 @@ Demos of the new features coming soon...
 
 ## Installation and basic usage
 
-Just download `leaflet.canvas-markers.js` from the `dist` folder and attach it to your project.
+Just download `leaflet.canvas-layer.js` from the `dist` folder and attach it to your project.
 
 ```html
-<script src="leaflet.canvas-markers.js"></script>
+<script src="leaflet.canvas-layer.js"></script>
 ```
 
 Now attach layer to map and some markers.
 
 ```js
 // Adds a layer
-var ciLayer = L.canvasIconLayer({}).addTo(map);
+var ciLayer = L.canvasLayer({}).addTo(map);
 
 // Marker definition
 var marker =  L.marker([58.5578, 29.0087], {icon: icon});

@@ -1,3 +1,3 @@
-var factory = require("./plugin/leaflet.canvas-markers");
+var factory = require("./plugin/leaflet.canvas-layer");
 
-window.L.CanvasIconLayer = factory(L);
+window.L.CanvasLayer = factory(L);
