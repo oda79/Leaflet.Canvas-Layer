@@ -1,8 +1,8 @@
 {
-  "name": "leaflet-canvas-marker",
-  "version": "0.2.0",
+  "name": "leaflet-canvas-layer",
+  "version": "0.3.0",
   "description": "Leaflet plugin to display markers on canvas instead of DOM",
-  "main": "dist/leaflet.canvas-markers.js",
+  "main": "dist/leaflet.canvas-layer.js",
   "directories": {
     "example": "examples",
     "lib": "dist"
@@ -17,13 +17,13 @@
     "leaflet",
     "leaflet-plugin",
     "marker",
-    "map"
+    "canvas"
   ],
   "author": "Evgeniy Voynov <voynov.ev@gmail.com> (http://github.com/eJuke)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eJuke/Leaflet.Canvas-Markers.git"
+    "url": "https://github.com/oda79/Leaflet.Canvas-Layer.git"
   },
   "devDependencies": {
     "script-loader": "^0.7.2",
