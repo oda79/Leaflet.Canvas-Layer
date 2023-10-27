@@ -1,3 +1,5 @@
+*.lock
+*.bak
 # Logs
 logs
 *.log
