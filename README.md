@@ -1,10 +1,39 @@
 # Leaflet.Canvas-Markers
-Leaflet plugin for displaying markers on canvas instead of DOM. Working with Leaflet 1.0.0 and above.
+The continuation of [Leaflet.Canvas-Markers](http://eJuke.github.io/Leaflet.Canvas-Markers/examples/index.html)leaflet for displaying markers on canvas instead of DOM. Working with Leaflet 1.0.0 and above.
 Feel free to contribute
+
+## New Features
+- animated zoom for the canvas 
+- className property added to the canvas Layer, which allows to refer the canvas as an element of DOM to control its visibility, etc
+- full L.divIcon support added
+- custom canvas marker draw function added as **`userDrawFunc`** parameter of the Layer. The idea is taken from [Leaflet.Canvas-Marker-Layer](https://github.com/zzcyrus/Leaflet.Canvas-Marker-Layer)
+
+```js
+/**
+ * @param layer         the layer object
+ * @param marker        current marker object
+ * @param pointPos      current marker's pixel position
+ * @param size          current marker's icon size
+ */
+
+var layer = L.canvasMarkerLayer({
+  userDrawFunc: function(layer, marker, pointPos, size){
+    var ctx = layer._context;
+    ctx.beginPath();
+    ctx.arc(pointPos.x, pointPos.y, size[0] / 2, 0, 2 * Math.PI);
+    ctx.fillStyle = 'rgba(255,12,0,0.4)';
+    ctx.fill();
+    ctx.closePath();
+  }
+}).addTo(map);
+
+```
 
 ## Demo
 
 There's a [demo](http://eJuke.github.io/Leaflet.Canvas-Markers/examples/index.html) for 10000 points, running on Canvas
+
+Demos of the new features coming soon...
 
 ## Installation and basic usage
 
